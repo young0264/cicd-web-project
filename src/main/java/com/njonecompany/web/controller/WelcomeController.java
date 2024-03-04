@@ -15,8 +15,8 @@ public class WelcomeController {
 
     @GetMapping("/")
     public String index(Model model) {
-//        logger.debug("Welcome to njonecompany.com...");
-        System.out.println("성능 저하 코드 추가");
+        logger.debug("Welcome to njonecompany.com...");
+//        System.out.println("성능 저하 코드 추가");
 
         model.addAttribute("msg", getMessage());
         model.addAttribute("today", new Date());
